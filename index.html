@@ -4,23 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Properties</title>
-     <link rel="icon" type="image/png" href="Screenshot 2026-02-08 at 22-47-32 372fcc916019536b3d5cde78a490b1b6-372fcc916019536b3d5cde78a490b1b6-WhatsApp-Image-2026-01-08-at-8.40.05-PM.webp (WEBP Image 1080 × 1080 pixels).png">
-
+    <link rel="icon" type="image/png" href="Screenshot 2026-02-08 at 22-47-32 372fcc916019536b3d5cde78a490b1b6-372fcc916019536b3d5cde78a490b1b6-WhatsApp-Image-2026-01-08-at-8.40.05-PM.webp (WEBP Image 1080 × 1080 pixels).png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Welcome Popup Modal (CSS Only) -->
+    <input type="checkbox" id="modal-toggle" class="modal-toggle" checked>
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome to Dream Properties! 🏡</h2>
+                <p class="modal-subtitle">Get Exclusive Real Estate Insights</p>
+            </div>
+            <form class="modal-form" action="#home">
+                <div class="modal-form-group">
+                    <label for="modal-name">Full Name *</label>
+                    <input type="text" id="modal-name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="modal-form-group">
+                    <label for="modal-email">Email Address *</label>
+                    <input type="email" id="modal-email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="modal-form-group">
+                    <label for="modal-phone">Phone Number *</label>
+                    <input type="tel" id="modal-phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                
+                <div class="modal-form-group">
+                    <label for="modal-interest">I'm Interested In</label>
+                    <select id="modal-interest" name="interest">
+                        <option value="">Select your interest</option>
+                        <option value="residential">Residential Properties</option>
+                        <option value="commercial">Commercial Properties</option>
+                        <option value="plots">Plots/Land</option>
+                        <option value="investment">Investment Consulting</option>
+                    </select>
+                </div>
+                
+                <label for="modal-toggle" class="modal-submit-btn">Get Started</label>
+                <label for="modal-toggle" class="modal-skip">Skip for now</label>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo"><img src="Screenshot 2026-02-08 at 22-47-32 372fcc916019536b3d5cde78a490b1b6-372fcc916019536b3d5cde78a490b1b6-WhatsApp-Image-2026-01-08-at-8.40.05-PM.webp (WEBP Image 1080 × 1080 pixels).png" width="60px" height="60px"> Dream Properties</div>
+            <div class="logo">
+                <img src="Screenshot 2026-02-08 at 22-47-32 372fcc916019536b3d5cde78a490b1b6-372fcc916019536b3d5cde78a490b1b6-WhatsApp-Image-2026-01-08-at-8.40.05-PM.webp (WEBP Image 1080 × 1080 pixels).png" width="60px" height="60px" alt="Dream Properties Logo"> 
+                <span class="logo-text">Dream Properties</span>
+            </div>
+            <label for="menu-toggle" class="mobile-menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#Youtube">Youtube</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-                
+                <li><label for="menu-toggle"><a href="#home">Home</a></label></li>
+                <li><label for="menu-toggle"><a href="#about">About</a></label></li>
+                <li><label for="menu-toggle"><a href="#services">Services</a></label></li>
+                <li><label for="menu-toggle"><a href="#Youtube">Youtube</a></label></li>
+                <li><label for="menu-toggle"><a href="#reviews">Reviews</a></label></li>
+                <li><label for="menu-toggle"><a href="#contact">Contact</a></label></li>
             </ul>
         </nav>
     </header>
@@ -56,7 +106,8 @@
         </div>
     </section>
 
-    <hr style="height: 4px; background-color: black;">
+    <hr class="section-divider">
+    
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
@@ -159,7 +210,8 @@
         </div>
     </section>
 
-    <hr style="height: 4px;background-color: black;">
+    <hr class="section-divider">
+    
     <!-- Customer Reviews Video Section -->
     <section class="video-section video-section-reviews" id="reviews">
         <div class="container">
@@ -219,21 +271,30 @@
         </div>
     </section>
 
-        <div class="youtube1" id="Youtube">
-            <center>
-            <h1 style="color: orangered;">Our Youtube Channel</h1>
-            <h3 style="color: black"><u>DREAM PROPERTIES</u></h3>
-            <br>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hMxEL07Kl94?si=ZG-YSP6PmUiA1HB6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/txgxbqkeYs0?si=O1ddtpSxS34uhyoL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NoCiYjVUW-Q?si=q-LbjmQZnkpuQQqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ilhGYQCU60w?si=vY76wuk0SJqdS4NZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </center>
+    <!-- YouTube Section -->
+    <section class="youtube-section" id="Youtube">
+        <div class="container">
+            <h2 class="section-title" style="color: orangered;">Our Youtube Channel</h2>
+            <h3 class="youtube-subtitle"><u>DREAM PROPERTIES</u></h3>
+            
+            <div class="youtube-grid">
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/hMxEL07Kl94?si=ZG-YSP6PmUiA1HB6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/txgxbqkeYs0?si=O1ddtpSxS34uhyoL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/NoCiYjVUW-Q?si=q-LbjmQZnkpuQQqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/ilhGYQCU60w?si=vY76wuk0SJqdS4NZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
-    <hr style="bottom: 3px;height:4px;background-color: black;">
+    <hr class="section-divider">
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -249,7 +310,7 @@
                         <div class="contact-icon">📍</div>
                         <div class="contact-details">
                             <h4>Our Office</h4>
-                            <p>Magilchi Nagar, Near Aathupalam Bus Stop<br>Virudhunagar,Tamil Nadu 626001</p>
+                            <p>Magilchi Nagar, Near Aathupalam Bus Stop<br>Virudhunagar, Tamil Nadu 626001</p>
                         </div>
                     </div>
                     
@@ -280,7 +341,7 @@
                 
                 <div class="contact-form-wrapper">
                     <h3>Send Us a Message</h3>
-                    <form class="contact-form">
+                    <form class="contact-form" action="#contact">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" placeholder="Enter your name" required>
